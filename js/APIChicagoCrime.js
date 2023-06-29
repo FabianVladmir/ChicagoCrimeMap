@@ -8,7 +8,7 @@ export async function fetchDataChicago () {
           "$$app_token": "3cJyRnxM0CrRL3CRjJONj4Xez"
         }
       });
-      return response;
+      return response.json();
     } catch (error) {
       console.error("Error fetching data:", error);
       throw error;
