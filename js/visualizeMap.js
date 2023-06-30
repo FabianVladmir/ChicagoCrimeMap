@@ -3,9 +3,6 @@ import {fetchDataChicago} from './APIChicagoCrime.js';
 const btnChicagoMap = document.querySelector('#btnChicagoMap');
 btnChicagoMap.addEventListener('click', showMapChicago);
 
-const copydataChicago = []
-
-
 async function showMapChicago (){
     try {
         const dataChicago = await fetchDataChicago();
